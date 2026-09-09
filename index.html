@@ -3,56 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STYLEO CEYLON | Luxury Fashion</title>
+    <title>CEYLON BOTANICS | Organic Wellness</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="top-bar">Pure Sri Lankan Herbal & Organic Wellness | Free Shipping Islandwide</div>
+
     <header class="header">
-        <div class="logo">STYLEO CEYLON</div>
+        <div class="logo">CEYLON BOTANICS</div>
         <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
-            <a href="#shop">Shop</a>
-            <a href="#about">About</a>
+            <a href="#shop">Products</a>
+            <a href="#about">Our Story</a>
             <a href="#contact">Contact</a>
         </nav>
         <div class="nav-actions">
-            <button id="cartBtn">Bag (0)</button>
+            <button class="icon-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
             <button class="menu-toggle" id="menuToggle">☰</button>
         </div>
     </header>
 
-    <main class="main-content">
+    <main>
         <section class="hero" id="home">
-            <h1>Modern Luxury Fashion</h1>
-            <p>Designed for the Sri Lankan Lifestyle</p>
-            <button class="cta-btn">Explore Collection</button>
+            <div class="hero-content">
+                <span>100% ORGANIC & NATURAL</span>
+                <h1>Ancient Wisdom, Modern Wellness</h1>
+                <p>Authentic Sri Lankan herbal essentials for body and mind.</p>
+                <a href="#shop" class="cta-btn">Explore Oils & Teas</a>
+            </div>
         </section>
 
         <section class="products" id="shop">
-            <h2>Featured Collections</h2>
+            <div class="section-header">
+                <h2>Featured Elixirs</h2>
+                <p>Sustainably harvested and crafted by local artisans</p>
+            </div>
             <div class="product-grid">
                 <div class="card">
-                    <div class="card-img"></div>
-                    <h3>Silk Osariya</h3>
-                    <p>LKR 25,000</p>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80" alt="Cinnamon Oil">
+                        <button class="add-btn">Add to Cart</button>
+                    </div>
+                    <h3>Pure Pure Cinnamon Bark Oil</h3>
+                    <p class="price">LKR 4,500</p>
                 </div>
                 <div class="card">
-                    <div class="card-img"></div>
-                    <h3>Linen Designer Shirt</h3>
-                    <p>LKR 8,500</p>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=800&q=80" alt="Herbal Tea">
+                        <button class="add-btn">Add to Cart</button>
+                    </div>
+                    <h3>Organic Blue Lotus Tea</h3>
+                    <p class="price">LKR 3,200</p>
                 </div>
                 <div class="card">
-                    <div class="card-img"></div>
-                    <h3>Luxury Evening Dress</h3>
-                    <p>LKR 18,000</p>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1608248597260-84f938222638?auto=format&fit=crop&w=800&q=80" alt="Sandalwood Serum">
+                        <button class="add-btn">Add to Cart</button>
+                    </div>
+                    <h3>Ayurvedic Body Oil</h3>
+                    <p class="price">LKR 5,800</p>
                 </div>
             </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Ethical & Sustainable</h2>
+            <p>We work directly with local farmers across Sri Lanka to bring you unrefined, eco-conscious herbal wellness products.</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Get in Touch</h2>
+            <p>📧 hello@ceylonbotanics.lk | 📞 +94 11 234 5678</p>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 STYLEO CEYLON. Powered by DecodeLabs Project 1.</p>
+        <p>&copy; 2026 CEYLON BOTANICS. Powered by DecodeLabs Project 1.</p>
     </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Herbal Basket</h3>
+            <span class="close-btn" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">Basket is empty</div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
